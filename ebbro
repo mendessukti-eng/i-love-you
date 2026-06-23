@@ -1,134 +1,136 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Important Question ❤️</title>
+<title>Question for Subhro ❤️</title>
 
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family:'Trebuchet MS', sans-serif;
-    }
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:Arial,sans-serif;
+    overflow:hidden;
+}
 
-    body{
-        height:100vh;
-        background:linear-gradient(135deg,#ffdde1,#ee9ca7);
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        overflow:hidden;
-    }
+.container{
+    background:white;
+    width:90%;
+    max-width:500px;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
 
-    .card{
-        background:white;
-        padding:40px;
-        border-radius:30px;
-        text-align:center;
-        box-shadow:0 10px 30px rgba(0,0,0,0.15);
-        max-width:500px;
-        width:90%;
-        position:relative;
-    }
+h1{
+    color:#ff4d79;
+}
 
-    h1{
-        color:#ff4f7b;
-        margin-bottom:15px;
-    }
+p{
+    font-size:18px;
+    color:#555;
+}
 
-    p{
-        color:#555;
-        font-size:1.1rem;
-        margin-bottom:25px;
-    }
+.ball{
+    font-size:70px;
+    animation:bounce 1s infinite;
+}
 
-    .emoji{
-        font-size:4rem;
-        margin-bottom:15px;
-    }
+@keyframes bounce{
+    50%{transform:translateY(-12px);}
+}
 
-    .buttons{
-        position:relative;
-        height:120px;
-    }
+.btns{
+    margin-top:25px;
+    position:relative;
+    height:120px;
+}
 
-    button{
-        border:none;
-        padding:15px 30px;
-        border-radius:50px;
-        font-size:1rem;
-        cursor:pointer;
-        transition:.3s;
-    }
+button{
+    border:none;
+    padding:14px 28px;
+    border-radius:50px;
+    font-size:18px;
+    cursor:pointer;
+}
 
-    #yesBtn{
-        background:#ff4f7b;
-        color:white;
-    }
+#yes{
+    background:#ff4d79;
+    color:white;
+}
 
-    #yesBtn:hover{
-        transform:scale(1.1);
-    }
+#no{
+    background:#ddd;
+    position:absolute;
+    left:60%;
+}
 
-    #noBtn{
-        background:#ddd;
-        position:absolute;
-        left:60%;
-        top:0;
-    }
+#result{
+    display:none;
+}
 
-    .success{
-        display:none;
-        margin-top:20px;
-        animation:pop .5s ease;
-    }
+.hearts{
+    position:fixed;
+    font-size:24px;
+    animation:float 3s linear forwards;
+}
 
-    @keyframes pop{
-        from{transform:scale(.5);}
-        to{transform:scale(1);}
+@keyframes float{
+    from{
+        transform:translateY(0);
+        opacity:1;
     }
+    to{
+        transform:translateY(-500px);
+        opacity:0;
+    }
+}
 </style>
+
 </head>
+
 <body>
 
-<div class="card">
+<div class="container">
 
-    <div class="emoji">⚽❤️🇵🇹</div>
+<div class="ball">⚽🇵🇹</div>
 
-    <h1>Hey Subhro...</h1>
+<h1>Hey Subhro ❤️</h1>
 
-    <p>
-        Will you watch the Portugal World Cup match with me? 🥺❤️
-        <br><br>
-        Snacks included 🍿
-        <br>
-        Cuddles optional (but highly recommended) 😌
-    </p>
+<p>
+Will you watch Portugal's World Cup match with me? 🥺<br><br>
+There will be snacks 🍿, excitement ⚽,<br>
+and a very cute girl waiting for you ❤️
+</p>
 
-    <div class="buttons">
-        <button id="yesBtn">YES OF COURSE ❤️</button>
-        <button id="noBtn">No 😶</button>
-    </div>
+<div class="btns">
+<button id="yes">YES ❤️</button>
+<button id="no">NO 😭</button>
+</div>
 
-    <div class="success" id="success">
-        <h2>YAYYYYY!!! ❤️❤️❤️</h2>
-        <p>
-            It's a date! ⚽🇵🇹<br>
-            Portugal + You + Me = Perfect Match Day ✨
-        </p>
-        <div style="font-size:4rem;">🥰⚽🎉</div>
-    </div>
+<div id="result">
+<h1>YAYYYYYY!!! 🎉❤️</h1>
+<p>
+It's a date! ⚽🇵🇹<br><br>
+Portugal + You + Me = Perfect Evening ✨
+</p>
+<h2>🥰🥰🥰</h2>
+</div>
 
 </div>
 
 <script>
 
-const noBtn = document.getElementById("noBtn");
+const noBtn = document.getElementById("no");
 
-noBtn.addEventListener("mouseover", () => {
-    const x = Math.random() * (window.innerWidth - 120);
+noBtn.addEventListener("mouseenter", () => {
+    const x = Math.random() * (window.innerWidth - 100);
     const y = Math.random() * (window.innerHeight - 60);
 
     noBtn.style.position = "fixed";
@@ -136,10 +138,27 @@ noBtn.addEventListener("mouseover", () => {
     noBtn.style.top = y + "px";
 });
 
-document.getElementById("yesBtn").addEventListener("click", () => {
-    document.querySelector(".buttons").style.display = "none";
-    document.getElementById("success").style.display = "block";
-});
+document.getElementById("yes").onclick = () => {
+
+    document.querySelector(".btns").style.display = "none";
+    document.getElementById("result").style.display = "block";
+
+    setInterval(() => {
+
+        const heart = document.createElement("div");
+        heart.className = "hearts";
+        heart.innerHTML = "❤️";
+
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.top = window.innerHeight + "px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 3000);
+
+    }, 150);
+
+};
 
 </script>
 
