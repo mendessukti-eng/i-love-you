@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏆 Official Match Day Invitation 🏆</title>
+<title>🏆 Ebb FC Official Transfer Offer 🏆</title>
 
 <style>
 *{
@@ -14,7 +14,7 @@ font-family:'Trebuchet MS',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#14532d,#166534,#22c55e);
+background:linear-gradient(135deg,#0f5132,#198754,#2ecc71);
 height:100vh;
 overflow:hidden;
 color:white;
@@ -24,10 +24,10 @@ color:white;
 display:none;
 height:100vh;
 padding:30px;
-text-align:center;
 justify-content:center;
 align-items:center;
 flex-direction:column;
+text-align:center;
 }
 
 .active{
@@ -35,12 +35,13 @@ display:flex;
 }
 
 .card{
-background:rgba(255,255,255,.12);
-backdrop-filter:blur(8px);
-padding:30px;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(10px);
+padding:35px;
 border-radius:25px;
-max-width:700px;
+max-width:750px;
 width:90%;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
 }
 
 h1{
@@ -48,73 +49,64 @@ margin-bottom:15px;
 }
 
 button{
-margin-top:20px;
 padding:15px 30px;
+margin-top:20px;
 border:none;
 border-radius:50px;
-cursor:pointer;
 font-size:18px;
 font-weight:bold;
+cursor:pointer;
 }
 
 .next{
-background:#facc15;
+background:#ffd43b;
 }
 
 .yes{
-background:#ef4444;
+background:#ff4d6d;
 color:white;
 }
 
 .no{
 background:white;
 position:absolute;
+color:black;
 }
 
-.stat{
-margin:12px 0;
-}
-
-.bar{
-height:20px;
-background:#ffffff44;
-border-radius:50px;
-overflow:hidden;
-}
-
-.fill{
-height:100%;
-background:#facc15;
-}
-
-.ball{
+.football{
 position:absolute;
-font-size:30px;
+font-size:35px;
 animation:bounce 2s infinite;
 }
 
 @keyframes bounce{
-50%{transform:translateY(-15px);}
+50%{
+transform:translateY(-20px);
+}
 }
 
-.flag{
-font-size:40px;
-}
-
-.checkbox{
-font-size:24px;
+.doodle{
+font-size:30px;
 margin:10px;
-cursor:pointer;
 }
 
-.trophy{
-font-size:90px;
+.bar{
+height:18px;
+background:#ffffff33;
+border-radius:50px;
+overflow:hidden;
+margin:8px 0;
+}
+
+.fill{
+height:100%;
+background:#ffd43b;
 }
 
 .heart{
 position:absolute;
-animation:float 5s linear forwards;
 font-size:30px;
+animation:float 5s linear forwards;
 }
 
 @keyframes float{
@@ -123,93 +115,108 @@ transform:translateY(0);
 opacity:1;
 }
 to{
-transform:translateY(-700px);
+transform:translateY(-800px);
 opacity:0;
 }
 }
 </style>
 </head>
+
 <body>
 
-<div class="ball" style="left:5%;top:10%">⚽</div>
-<div class="ball" style="right:10%;top:70%">⚽</div>
+<div class="football" style="left:5%;top:10%">⚽</div>
+<div class="football" style="right:10%;top:70%">⚽</div>
+<div class="football" style="left:80%;top:20%">🏆</div>
 
 <!-- PAGE 1 -->
+
 <div class="page active" id="p1">
 <div class="card">
-<h1>🚨 BREAKING TRANSFER NEWS 🚨</h1>
+
+<h1>🚨 TRANSFER DEADLINE DAY 🚨</h1>
+
+<div class="doodle">⚽ 🏆 🇵🇹 ❤️ ⚽</div>
+
+<h2>HERE WE GO! ✅</h2>
+
+<br>
 
 <p>
-FC Sukti has officially submitted a bid
-for superstar player Subhro.
+Breaking news from football HQ...
 </p>
 
 <br>
 
 <p>
-Contract Includes:
-<br>
-💜 Discord Dates
-<br>
-⚽ Football Nights
-<br>
-🍿 Snacks
-<br>
-❤️ Unlimited Affection
+Ebb FC has reached a full agreement
+for the signing of superstar player
+Subhro ❤️
 </p>
 
-<button class="next" onclick="next(2)">
+<br>
+
+<p>
+📜 Contract Length: Forever
+<br>
+❤️ Salary: Unlimited Love
+<br>
+💜 Bonus: Discord Dates
+<br>
+⚽ Match Nights Included
+</p>
+
+<button class="next" onclick="nextPage(2)">
 Enter Negotiations →
 </button>
+
 </div>
 </div>
 
 <!-- PAGE 2 -->
+
 <div class="page" id="p2">
 <div class="card">
-<h1>📊 SCOUTING REPORT</h1>
 
-<div class="stat">
+<h1>📊 PLAYER SCOUT REPORT</h1>
+
+<p>SUBHRO FC</p>
+
+<br>
+
 Loyalty
 <div class="bar"><div class="fill" style="width:99%"></div></div>
-</div>
 
-<div class="stat">
 Humour
-<div class="bar"><div class="fill" style="width:95%"></div></div>
-</div>
+<div class="bar"><div class="fill" style="width:96%"></div></div>
 
-<div class="stat">
-Cute
-<div class="bar"><div class="fill" style="width:100%"></div></div>
-</div>
-
-<div class="stat">
 Football IQ
-<div class="bar"><div class="fill" style="width:88%"></div></div>
-</div>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
 
-<h2 style="margin-top:20px">
-Overall Rating: 99 ❤️
-</h2>
+Cuteness
+<div class="bar"><div class="fill" style="width:100%"></div></div>
 
-<button class="next" onclick="next(3)">
+Boyfriend Material
+<div class="bar"><div class="fill" style="width:999%"></div></div>
+
+<br>
+
+<h2>Overall Rating: 99 ❤️</h2>
+
+<button class="next" onclick="nextPage(3)">
 Continue →
 </button>
+
 </div>
 </div>
 
 <!-- PAGE 3 -->
+
 <div class="page" id="p3">
 <div class="card">
 
-<h1>⚽ MATCH PREVIEW ⚽</h1>
+<h1>⚽ OFFICIAL MATCH PREVIEW ⚽</h1>
 
-<div class="flag">🇵🇹 VS 🇺🇿</div>
-
-<br>
-
-<h2>Portugal vs Uzbekistan</h2>
+<h2>🇵🇹 Portugal vs 🇺🇿 Uzbekistan</h2>
 
 <br>
 
@@ -217,16 +224,26 @@ Continue →
 🕥 Kickoff: 10:30 PM
 </p>
 
+<br>
+
 <p>
 🏟 Venue: Discord Stadium
 </p>
 
+<br>
+
 <p>
 🎙 Commentators:
-Sukti & Subhro
+Ebb & Subhro
 </p>
 
-<button class="next" onclick="next(4)">
+<br>
+
+<div class="doodle">
+⚽ ─── 🥅 ─── ⚽
+</div>
+
+<button class="next" onclick="nextPage(4)">
 Select Team →
 </button>
 
@@ -234,20 +251,22 @@ Select Team →
 </div>
 
 <!-- PAGE 4 -->
+
 <div class="page" id="p4">
 <div class="card">
 
 <h1>👕 TEAM SELECTION</h1>
 
-<p class="checkbox">✅ Sukti</p>
-<p class="checkbox">✅ Portugal</p>
-<p class="checkbox">✅ Snacks</p>
-<p class="checkbox">✅ Good Vibes</p>
+<br>
 
-<p class="checkbox" onclick="joinTeam(this)">
-⬜ Subhro</p>
+<p>✅ Ebb</p>
+<p>✅ Portugal</p>
+<p>✅ Snacks</p>
+<p>✅ Good Vibes</p>
 
 <br>
+
+<button onclick="joinTeam()">Add Subhro To Squad ❤️</button>
 
 <div id="lineup"></div>
 
@@ -255,20 +274,25 @@ Select Team →
 </div>
 
 <!-- PAGE 5 -->
+
 <div class="page" id="p5">
 <div class="card">
 
 <h1>🥅 PENALTY SHOOTOUT</h1>
 
+<br>
+
 <p>
-Will you watch the match with Sukti?
+Will you watch the match with Ebb? ❤️
 </p>
+
+<br>
 
 <button class="yes" onclick="win()">
 ⚽ SCORE PENALTY
 </button>
 
-<button class="no" id="no">
+<button class="no" id="noBtn">
 ❌ MISS PENALTY
 </button>
 
@@ -276,56 +300,75 @@ Will you watch the match with Sukti?
 </div>
 
 <!-- PAGE 6 -->
+
 <div class="page" id="p6">
 <div class="card">
 
-<div class="trophy">🏆</div>
+<h1>🏆 TRANSFER COMPLETED 🏆</h1>
 
-<h1>TRANSFER COMPLETED!</h1>
+<br>
 
 <h2>
-SUBHRO ACCEPTED ❤️
+SUBHRO HAS OFFICIALLY SIGNED
+FOR EBB FC ❤️
 </h2>
 
 <br>
 
 <p>
-Player of the Match:
-Subhro
+✔ Contract Accepted
 </p>
 
 <p>
-Top Assist:
-Sukti
+⚽ Portugal Match Confirmed
 </p>
 
 <p>
-Official Match Date Confirmed 💜⚽
+💜 Discord Date Confirmed
 </p>
 
-<h1>
-🎉 ❤️ ⚽ ❤️ 🎉
-</h1>
+<p>
+🏆 Player Of The Match: Subhro
+</p>
+
+<p>
+🎯 Top Assist: Ebb
+</p>
+
+<br>
+
+<h1>❤️ ⚽ 🏆 ❤️ ⚽ 🏆 ❤️</h1>
 
 </div>
 </div>
 
 <script>
 
-function next(num){
-document.querySelectorAll('.page').forEach(p=>{
-p.classList.remove('active');
+function nextPage(num){
+document.querySelectorAll('.page').forEach(page=>{
+page.classList.remove('active');
 });
 document.getElementById('p'+num).classList.add('active');
 }
 
-function joinTeam(el){
-el.innerHTML="✅ Subhro";
+function joinTeam(){
+
 document.getElementById("lineup").innerHTML=
-"<h2>🎉 LINEUP COMPLETE 🎉</h2><button class='next' onclick='next(5)'>Go To Match</button>";
+`
+<br>
+<h2>🎉 LINEUP COMPLETE 🎉</h2>
+<p>✅ Ebb</p>
+<p>✅ Subhro</p>
+<p>✅ Portugal</p>
+<br>
+<button class="next" onclick="nextPage(5)">
+Proceed To Match →
+</button>
+`;
+
 }
 
-const noBtn=document.getElementById("no");
+const noBtn=document.getElementById("noBtn");
 
 document.addEventListener("mousemove",e=>{
 
@@ -345,13 +388,15 @@ Math.random()*(window.innerWidth-150)+"px";
 
 noBtn.style.top=
 Math.random()*(window.innerHeight-100)+"px";
+
 }
 }
+
 });
 
 function win(){
 
-next(6);
+nextPage(6);
 
 setInterval(()=>{
 
@@ -359,9 +404,12 @@ let heart=document.createElement("div");
 
 heart.className="heart";
 
-heart.innerHTML=Math.random()>0.5?"❤️":"⚽";
+heart.innerHTML=
+Math.random()>0.5 ? "❤️" : "⚽";
 
-heart.style.left=Math.random()*100+"vw";
+heart.style.left=
+Math.random()*100+"vw";
+
 heart.style.bottom="0px";
 
 document.body.appendChild(heart);
