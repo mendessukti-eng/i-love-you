@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Important Question ❤️</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:'Trebuchet MS', sans-serif;
+    }
+
+    body{
+        height:100vh;
+        background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        overflow:hidden;
+    }
+
+    .card{
+        background:white;
+        padding:40px;
+        border-radius:30px;
+        text-align:center;
+        box-shadow:0 10px 30px rgba(0,0,0,0.15);
+        max-width:500px;
+        width:90%;
+        position:relative;
+    }
+
+    h1{
+        color:#ff4f7b;
+        margin-bottom:15px;
+    }
+
+    p{
+        color:#555;
+        font-size:1.1rem;
+        margin-bottom:25px;
+    }
+
+    .emoji{
+        font-size:4rem;
+        margin-bottom:15px;
+    }
+
+    .buttons{
+        position:relative;
+        height:120px;
+    }
+
+    button{
+        border:none;
+        padding:15px 30px;
+        border-radius:50px;
+        font-size:1rem;
+        cursor:pointer;
+        transition:.3s;
+    }
+
+    #yesBtn{
+        background:#ff4f7b;
+        color:white;
+    }
+
+    #yesBtn:hover{
+        transform:scale(1.1);
+    }
+
+    #noBtn{
+        background:#ddd;
+        position:absolute;
+        left:60%;
+        top:0;
+    }
+
+    .success{
+        display:none;
+        margin-top:20px;
+        animation:pop .5s ease;
+    }
+
+    @keyframes pop{
+        from{transform:scale(.5);}
+        to{transform:scale(1);}
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="emoji">⚽❤️🇵🇹</div>
+
+    <h1>Hey Subhro...</h1>
+
+    <p>
+        Will you watch the Portugal World Cup match with me? 🥺❤️
+        <br><br>
+        Snacks included 🍿
+        <br>
+        Cuddles optional (but highly recommended) 😌
+    </p>
+
+    <div class="buttons">
+        <button id="yesBtn">YES OF COURSE ❤️</button>
+        <button id="noBtn">No 😶</button>
+    </div>
+
+    <div class="success" id="success">
+        <h2>YAYYYYY!!! ❤️❤️❤️</h2>
+        <p>
+            It's a date! ⚽🇵🇹<br>
+            Portugal + You + Me = Perfect Match Day ✨
+        </p>
+        <div style="font-size:4rem;">🥰⚽🎉</div>
+    </div>
+
+</div>
+
+<script>
+
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * (window.innerWidth - 120);
+    const y = Math.random() * (window.innerHeight - 60);
+
+    noBtn.style.position = "fixed";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+});
+
+document.getElementById("yesBtn").addEventListener("click", () => {
+    document.querySelector(".buttons").style.display = "none";
+    document.getElementById("success").style.display = "block";
+});
+
+</script>
+
+</body>
+</html>
