@@ -1,138 +1,120 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Subhro ❤️</title>
+<title>🏆 Official Match Day Invitation 🏆</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:'Trebuchet MS',sans-serif;
 }
 
 body{
+background:linear-gradient(135deg,#14532d,#166534,#22c55e);
 height:100vh;
 overflow:hidden;
-background:linear-gradient(135deg,#ff9acb,#ffd6e8,#ffe8f3);
-display:flex;
+color:white;
+}
+
+.page{
+display:none;
+height:100vh;
+padding:30px;
+text-align:center;
 justify-content:center;
 align-items:center;
-position:relative;
+flex-direction:column;
 }
 
-.star{
-position:absolute;
-color:white;
-animation:twinkle 2s infinite alternate;
-}
-
-@keyframes twinkle{
-from{opacity:.3;}
-to{opacity:1;}
+.active{
+display:flex;
 }
 
 .card{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(8px);
+padding:30px;
+border-radius:25px;
+max-width:700px;
 width:90%;
-max-width:650px;
-background:white;
-padding:35px;
-border-radius:30px;
-text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
-z-index:10;
 }
 
 h1{
-color:#ff4d88;
-font-size:2.2rem;
+margin-bottom:15px;
 }
 
-.subtitle{
-margin:15px 0;
-font-size:1.1rem;
-color:#666;
-}
-
-.match{
-background:#fff0f7;
-padding:15px;
-border-radius:20px;
-margin:20px 0;
-font-size:1.2rem;
-}
-
-.countdown{
-font-size:1.5rem;
+button{
+margin-top:20px;
+padding:15px 30px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+font-size:18px;
 font-weight:bold;
-color:#ff4d88;
-margin:15px 0;
 }
 
-.love-meter{
-margin:20px 0;
+.next{
+background:#facc15;
+}
+
+.yes{
+background:#ef4444;
+color:white;
+}
+
+.no{
+background:white;
+position:absolute;
+}
+
+.stat{
+margin:12px 0;
 }
 
 .bar{
-height:25px;
-background:#ffd3e6;
+height:20px;
+background:#ffffff44;
 border-radius:50px;
 overflow:hidden;
 }
 
 .fill{
 height:100%;
-width:100%;
-background:#ff4d88;
-animation:pulse 2s infinite;
+background:#facc15;
 }
 
-@keyframes pulse{
-50%{opacity:.7;}
+.ball{
+position:absolute;
+font-size:30px;
+animation:bounce 2s infinite;
 }
 
-.buttons{
-position:relative;
-height:120px;
-margin-top:25px;
+@keyframes bounce{
+50%{transform:translateY(-15px);}
 }
 
-button{
-border:none;
-padding:15px 30px;
-border-radius:50px;
-font-size:18px;
+.flag{
+font-size:40px;
+}
+
+.checkbox{
+font-size:24px;
+margin:10px;
 cursor:pointer;
 }
 
-#yes{
-background:#ff4d88;
-color:white;
-}
-
-#no{
-background:#ddd;
-position:absolute;
-left:60%;
-}
-
-.success{
-display:none;
-}
-
-.success h2{
-color:#ff4d88;
-margin-bottom:15px;
+.trophy{
+font-size:90px;
 }
 
 .heart{
-position:fixed;
-font-size:25px;
-animation:float 4s linear forwards;
+position:absolute;
+animation:float 5s linear forwards;
+font-size:30px;
 }
 
 @keyframes float{
@@ -145,140 +127,252 @@ transform:translateY(-700px);
 opacity:0;
 }
 }
-
-.discord{
-font-size:1.2rem;
-margin-top:10px;
-color:#5865F2;
-font-weight:bold;
-}
-
 </style>
-
 </head>
-
 <body>
 
+<div class="ball" style="left:5%;top:10%">⚽</div>
+<div class="ball" style="right:10%;top:70%">⚽</div>
+
+<!-- PAGE 1 -->
+<div class="page active" id="p1">
 <div class="card">
-
-<h1>Hey Subhro ❤️</h1>
-
-<p class="subtitle">
-I know we're far apart right now 🌍<br>
-but distance can't stop us from having a football date 🥺❤️
-</p>
-
-<div class="match">
-⚽ Portugal 🇵🇹 vs Uzbekistan 🇺🇿<br>
-🕥 Tonight at 10:30 PM
-</div>
-
-<div class="discord">
-💜 Discord Match Date?
-</div>
-
-<div class="countdown" id="countdown">
-Loading countdown...
-</div>
-
-<div class="love-meter">
-<p>Chance of me being sad if you say no 😭</p>
-<div class="bar">
-<div class="fill"></div>
-</div>
-<p>100%</p>
-</div>
-
-<div class="buttons">
-<button id="yes">YES! ❤️</button>
-<button id="no">No 😶</button>
-</div>
-
-<div class="success" id="success">
-<h2>YAYYYYYYY ❤️❤️❤️</h2>
+<h1>🚨 BREAKING TRANSFER NEWS 🚨</h1>
 
 <p>
-Official Match Date Confirmed ⚽💜
-<br><br>
-Me 🤝 You 🤝 Portugal
-<br><br>
-See you on Discord tonight, love 🥰
+FC Sukti has officially submitted a bid
+for superstar player Subhro.
 </p>
 
-<h1>🎉⚽❤️🎉</h1>
+<br>
+
+<p>
+Contract Includes:
+<br>
+💜 Discord Dates
+<br>
+⚽ Football Nights
+<br>
+🍿 Snacks
+<br>
+❤️ Unlimited Affection
+</p>
+
+<button class="next" onclick="next(2)">
+Enter Negotiations →
+</button>
+</div>
 </div>
 
+<!-- PAGE 2 -->
+<div class="page" id="p2">
+<div class="card">
+<h1>📊 SCOUTING REPORT</h1>
+
+<div class="stat">
+Loyalty
+<div class="bar"><div class="fill" style="width:99%"></div></div>
+</div>
+
+<div class="stat">
+Humour
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+<div class="stat">
+Cute
+<div class="bar"><div class="fill" style="width:100%"></div></div>
+</div>
+
+<div class="stat">
+Football IQ
+<div class="bar"><div class="fill" style="width:88%"></div></div>
+</div>
+
+<h2 style="margin-top:20px">
+Overall Rating: 99 ❤️
+</h2>
+
+<button class="next" onclick="next(3)">
+Continue →
+</button>
+</div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="p3">
+<div class="card">
+
+<h1>⚽ MATCH PREVIEW ⚽</h1>
+
+<div class="flag">🇵🇹 VS 🇺🇿</div>
+
+<br>
+
+<h2>Portugal vs Uzbekistan</h2>
+
+<br>
+
+<p>
+🕥 Kickoff: 10:30 PM
+</p>
+
+<p>
+🏟 Venue: Discord Stadium
+</p>
+
+<p>
+🎙 Commentators:
+Sukti & Subhro
+</p>
+
+<button class="next" onclick="next(4)">
+Select Team →
+</button>
+
+</div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="p4">
+<div class="card">
+
+<h1>👕 TEAM SELECTION</h1>
+
+<p class="checkbox">✅ Sukti</p>
+<p class="checkbox">✅ Portugal</p>
+<p class="checkbox">✅ Snacks</p>
+<p class="checkbox">✅ Good Vibes</p>
+
+<p class="checkbox" onclick="joinTeam(this)">
+⬜ Subhro</p>
+
+<br>
+
+<div id="lineup"></div>
+
+</div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="p5">
+<div class="card">
+
+<h1>🥅 PENALTY SHOOTOUT</h1>
+
+<p>
+Will you watch the match with Sukti?
+</p>
+
+<button class="yes" onclick="win()">
+⚽ SCORE PENALTY
+</button>
+
+<button class="no" id="no">
+❌ MISS PENALTY
+</button>
+
+</div>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="p6">
+<div class="card">
+
+<div class="trophy">🏆</div>
+
+<h1>TRANSFER COMPLETED!</h1>
+
+<h2>
+SUBHRO ACCEPTED ❤️
+</h2>
+
+<br>
+
+<p>
+Player of the Match:
+Subhro
+</p>
+
+<p>
+Top Assist:
+Sukti
+</p>
+
+<p>
+Official Match Date Confirmed 💜⚽
+</p>
+
+<h1>
+🎉 ❤️ ⚽ ❤️ 🎉
+</h1>
+
+</div>
 </div>
 
 <script>
 
-for(let i=0;i<50;i++){
-let star=document.createElement('div');
-star.className='star';
-star.innerHTML='✨';
-star.style.left=Math.random()*100+'vw';
-star.style.top=Math.random()*100+'vh';
-star.style.fontSize=(10+Math.random()*15)+'px';
-document.body.appendChild(star);
+function next(num){
+document.querySelectorAll('.page').forEach(p=>{
+p.classList.remove('active');
+});
+document.getElementById('p'+num).classList.add('active');
 }
 
-const noBtn=document.getElementById('no');
+function joinTeam(el){
+el.innerHTML="✅ Subhro";
+document.getElementById("lineup").innerHTML=
+"<h2>🎉 LINEUP COMPLETE 🎉</h2><button class='next' onclick='next(5)'>Go To Match</button>";
+}
 
-noBtn.addEventListener('mouseenter',()=>{
-const x=Math.random()*(window.innerWidth-120);
-const y=Math.random()*(window.innerHeight-80);
+const noBtn=document.getElementById("no");
 
-noBtn.style.position='fixed';
-noBtn.style.left=x+'px';
-noBtn.style.top=y+'px';
+document.addEventListener("mousemove",e=>{
+
+if(document.getElementById("p5").classList.contains("active")){
+
+let rect=noBtn.getBoundingClientRect();
+
+let dx=e.clientX-(rect.left+50);
+let dy=e.clientY-(rect.top+20);
+
+let dist=Math.sqrt(dx*dx+dy*dy);
+
+if(dist<120){
+
+noBtn.style.left=
+Math.random()*(window.innerWidth-150)+"px";
+
+noBtn.style.top=
+Math.random()*(window.innerHeight-100)+"px";
+}
+}
 });
 
-document.getElementById('yes').onclick=()=>{
+function win(){
 
-document.querySelector('.buttons').style.display='none';
-document.getElementById('success').style.display='block';
+next(6);
 
 setInterval(()=>{
-const heart=document.createElement('div');
-heart.className='heart';
-heart.innerHTML='❤️';
 
-heart.style.left=Math.random()*window.innerWidth+'px';
-heart.style.top=window.innerHeight+'px';
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML=Math.random()>0.5?"❤️":"⚽";
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.bottom="0px";
 
 document.body.appendChild(heart);
 
-setTimeout(()=>heart.remove(),4000);
+setTimeout(()=>{
+heart.remove();
+},5000);
 
 },150);
 
-};
-
-function updateCountdown(){
-
-const target=new Date();
-target.setHours(22,30,0,0);
-
-const now=new Date();
-
-let diff=target-now;
-
-if(diff<0){
-document.getElementById("countdown").innerHTML=
-"⚽ Match time is here!";
-return;
 }
-
-const hrs=Math.floor(diff/1000/60/60);
-const mins=Math.floor(diff/1000/60)%60;
-const secs=Math.floor(diff/1000)%60;
-
-document.getElementById("countdown").innerHTML=
-`⏳ ${hrs}h ${mins}m ${secs}s until our date`;
-}
-
-setInterval(updateCountdown,1000);
-updateCountdown();
 
 </script>
 
